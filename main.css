@@ -1,0 +1,184 @@
+:root {
+  --clor1: linear-gradient(-0deg, #4a569d, #dc2424);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #3a3838;
+}
+
+/* ------grandSelecteur------- */
+
+.side-details {
+  margin-top: 11px;
+  text-align: center;
+  color: #ccc;
+}
+
+/* ----------------Slecteur HTML--------------------- */
+.gridContainer {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    "side header"
+    "side main";
+}
+
+.header {
+  color: #fff;
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 15px;
+  --tw-bg-opacity: 1;
+  background: rgb(248, 86, 11, var(--tw-bg-opacity));
+  grid-area: header;
+}
+.aside {
+  background: var(--clor1);
+  grid-area: side;
+}
+
+.footer {
+  padding-top: 20%;
+  grid-area: footer;
+  justify-self: start;
+  position: relative;
+}
+.menu {
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+.menu li {
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  transition: all 0.3s ease;
+}
+
+.menu li:nth-child(1) {
+  color: #fa460f;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-left: 2px solid #fa460f;
+  list-style-type: none;
+  padding: 10px;
+  background: #c3c5ca;
+  cursor: pointer;
+}
+
+.menu li:nth-child(2) {
+  color: #2c09f1;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-left: 2px solid #2c09f1;
+  list-style-type: none;
+  padding: 10px;
+  background: #c3c5ca;
+  cursor: pointer;
+}
+
+.menu li:nth-child(3) {
+  color: #f1bb09;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-left: 2px solid #f1bb09;
+  list-style-type: none;
+  padding: 10px;
+  background: #c3c5ca;
+  cursor: pointer;
+}
+
+.menu li:nth-child(4) {
+  color: #38af09;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-left: 2px solid #38af09;
+  list-style-type: none;
+  padding: 10px;
+  background: #c3c5ca;
+  cursor: pointer;
+}
+
+/*------------------- hover menu list------------------ */
+.menu li:nth-child(1):hover {
+  border-left: 10px solid #fa460f;
+  transition: 300ms ease-in-out;
+}
+.menu li:nth-child(2):hover {
+  border-left: 10px solid #2c09f1;
+  transition: 300ms ease-in-out;
+}
+.menu li:nth-child(3):hover {
+  border-left: 10px solid #f1bb09;
+  transition: 300ms ease-in-out;
+}
+.menu li:nth-child(4):hover {
+  border-left: 10px solid #38af09;
+  transition: 300ms ease-in-out;
+}
+
+/* ---------------------------------------- */
+.menu li:last-child() {
+  padding-bottom: 0;
+}
+
+/* -----------quand une page est active-------------- */
+.active,
+.activee,
+.activet,
+.activef {
+  position: relative;
+}
+/* Pseudo-élément pour ajouter le point */
+.active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fa460f;
+}
+.activee::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f1bb09;
+}
+.activet::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #2c09f1;
+}
+.activef::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #38af09;
+}

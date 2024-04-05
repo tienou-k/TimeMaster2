@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeMaster</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./acceuil.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="gridContainer">
+      <div class="header" id="date">
+        <h2>date</h2>
+      </div>
+      <div class="aside aside-content">
+        <div class="side-details">
+          <div class="head">
+            <h2>TimeMaster 1.0</h2>
+            <br />
+            <hr />
+          </div>
+          <div class="menu">
+            <ul>
+              <li class="active">
+                <a href="./index.html" class="acc">ACCEUIL</a>
+              </li>
+              <li class="tous">
+                <a href="./page-tous.html" class="Ts">Tous</a>
+              </li>
+              <li><a href="./page-en-cours.html" class="eC">En Cours</a></li>
+              <li><a href="./page-fini.html" class="F">Finies</a></li>
+            </ul>
+          </div>
+          <div class="footer">
+            <p>CopyRight &copy; Reserved TimeMaster 1.0</p>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="card" id="task-count">
+          <p>Total des tâches</p>
+          <h1>0</h1>
+        </div>
+        <div class="card" ><h1>MAIN-2</h1></div>
+        <div class="card"><h1>null</h1></div>
+        <div class="card"><h1>MAIN-3</h1></div>
+
+        <div class="card"><h1>MAIN-4</h1></div>
+        <div class="card card-btn">
+          <button type="submit" id="open-popup">
+            ajouter une nouvelle tâche
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PopUp pour l'ajouter des tâches -->
+    <div id="popup-container">
+      <div id="popup-content">
+        <span id="close-popup">&times;</span>
+        <h2>Ajouter une tâche</h2>
+        <form id="task-form">
+          <label for="task-input">Tâche :</label>
+          <input type="text" id="task-input" required />
+          <label for="date-input">Date d'échéance :</label>
+          <input type="date" id="date-input" required />
+          <label for="priority-select">Priorité :</label>
+          <select id="priority-select" required>
+            <option value="low">Basse</option>
+            <option value="medium">Moyenne</option>
+            <option value="high">Haute</option>
+          </select>
+          <button type="submit">Ajouter</button>
+        </form>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
