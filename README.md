@@ -3,6 +3,7 @@ En tant que futurs développeurs, la gestion des plannings sera une part essenti
 
 Titre: Liste de Tâches Interactive
 Objectif :
+
   Le but de ce projet est de créer une application web interactive permettant à l'utilisateur de saisir des     tâches à faire et de les afficher dans une liste. L'utilisateur doit également pouvoir supprimer les tâches   de la liste.
 Technologies à Utiliser :
  -HTML
